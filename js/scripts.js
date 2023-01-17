@@ -176,3 +176,34 @@ function topFunction() {
   document.body.scrollTop = 0; // for Safari
   document.documentElement.scrollTop = 0; // for Chrome, Firefox, IE and Opera
 }
+
+/* Send email */
+// Get the button
+const btnSend = document.getElementById("form");
+
+btnSend.addEventListener('click', sendForm)
+
+//send form
+function sendForm(event) {
+  event.preventDefault();
+
+  // Obtiene los valores de los campos del formulario
+  var name = document.getElementById("floatingInput4").value;
+  // var email = document.getElementById("floatingInput5").value;
+  var menssage = document.getElementById("floatingTextarea1").value;
+  var check = document.getElementById("exampleCheck2").checked;
+
+  // Valida que los campos no estén vacíos
+  if (!name || !menssage) {
+    alert("Por favor, completa todos los campos del formulario.");
+    return;
+  }
+
+  if (!check) {
+    alert("Por favor, acepta los terminos y condiciones.");
+    return;
+  }
+
+  // Abre el cliente de correo electrónico con los campos rellenos
+  window.location.href = "mailto:example@hotmail.com?subject=Mensaje de " + name + "&body=" + menssage;
+}
