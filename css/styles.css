@@ -619,7 +619,7 @@ a:hover {
   position: absolute;
   width: 6rem;
   height: 6rem;
-  background: url('../images/hexagon-green.svg') center center no-repeat;
+  background: url('https: //res.cloudinary.com/api-post-img/image/upload/v1676722351/DRM/hexagon-green_y93obw.svg') center center no-repeat;
   background-size: 6rem 6rem;
 }
 
