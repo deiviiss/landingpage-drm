@@ -28,10 +28,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
     rel="stylesheet">
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/fontawesome-all.min.css" rel="stylesheet">
-  <link href="css/swiper.css" rel="stylesheet">
-  <link href="css/styles.css" rel="stylesheet">
+  <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- <link href="css/fontawesome-all.min.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link href="css/swiper.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.5/swiper-bundle.css"
+    integrity="sha512-CTWIgc35lLPcCl1OP7MNcrrES+jyBBvMEz8Cqx/v0hifPNjIpPsd/jUYTJ/41CYCrQdfuw7LopKaqqjXVLqejg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style type="text/css">
     /* Description: Master CSS file */
@@ -559,7 +566,7 @@ Colors:
     .header {
       padding-top: 10rem;
       padding-bottom: 8.5rem;
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('../images/header-background.jpg') center center no-repeat;
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('https://res.cloudinary.com/api-post-img/image/upload/v1676722350/DRM/header-background_ry0dde.jpg') center center no-repeat;
       background-size: cover;
       text-align: center;
     }
@@ -588,7 +595,7 @@ Colors:
     /*     Intro     */
     /*****************/
     .basic-1 {
-      padding-top: 7.75rem;
+      padding-top: 4rem;
       padding-bottom: 4rem;
     }
 
@@ -655,7 +662,7 @@ Colors:
       position: absolute;
       width: 6rem;
       height: 6rem;
-      background: url('../images/hexagon-green.svg') center center no-repeat;
+      /* background: url('../images/hexagon-green.svg') center center no-repeat; */
       background-size: 6rem 6rem;
     }
 
@@ -677,8 +684,8 @@ Colors:
     /*     Services     */
     /********************/
     .cards-2 {
-      padding-top: 8rem;
-      padding-bottom: 3.75rem;
+      padding-top: 4rem;
+      padding-bottom: 3rem;
       text-align: center;
     }
 
@@ -691,7 +698,7 @@ Colors:
     }
 
     .cards-2 .card {
-      margin-bottom: 6rem;
+      margin-bottom: 3.75rem;
       border: none;
       background-color: #ffffff;
     }
@@ -716,7 +723,7 @@ Colors:
     /* end of hover animation */
 
     .cards-2 .card-body {
-      padding: 0 1.5rem 3rem 1.5rem;
+      padding: 0 1.5rem 0 1.5rem;
     }
 
     .cards-2 .card-body p {
@@ -766,7 +773,7 @@ Colors:
     /*********************/
     .accordion-1 .area-1 {
       height: 440px;
-      background: url('../images/details-1-background.jpg') center center no-repeat;
+      background: url('https://res.cloudinary.com/api-post-img/image/upload/v1676722350/DRM/details-1-background_dcn08a.jpg') center center no-repeat;
       background-size: cover;
     }
 
@@ -958,135 +965,8 @@ Colors:
 
     .tabs-1 .area-2 {
       height: 432px;
-      background: url('../images/details-2-background.jpg') center center no-repeat;
+      background: url('https://res.cloudinary.com/api-post-img/image/upload/v1676722349/DRM/details-2-background_qljt7p.jpg') center center no-repeat;
       background-size: cover;
-    }
-
-
-    /************************/
-    /*     Testimonials     */
-    /************************/
-    .slider-1 {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-      text-align: center;
-    }
-
-    .slider-1 .h2-heading {
-      margin-bottom: 3.5rem;
-    }
-
-    .slider-1 .slider-container {
-      position: relative;
-    }
-
-    .slider-1 .swiper-container {
-      position: static;
-      width: 88%;
-      text-align: center;
-    }
-
-    .slider-1 .swiper-button-prev:focus,
-    .slider-1 .swiper-button-next:focus {
-      /* even if you can't see it chrome you can see it on mobile device */
-      outline: none;
-    }
-
-    .slider-1 .swiper-button-prev {
-      left: -10px;
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23484a46'%2F%3E%3C%2Fsvg%3E");
-      background-size: 18px 28px;
-    }
-
-    .slider-1 .swiper-button-next {
-      right: -10px;
-      background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2028%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23484a46'%2F%3E%3C%2Fsvg%3E");
-      background-size: 18px 28px;
-    }
-
-    .slider-1 .card {
-      position: relative;
-      border: none;
-      background-color: transparent;
-    }
-
-    .slider-1 .card-image {
-      width: 96px;
-      height: 96px;
-      margin-right: auto;
-      margin-bottom: 1.5rem;
-      margin-left: auto;
-      border-radius: 50%;
-    }
-
-    .slider-1 .card-body {
-      padding: 0;
-    }
-
-    .slider-1 .testimonial-author {
-      margin-bottom: 0;
-      color: #484a46;
-    }
-
-
-    /************************/
-    /*     Registration     */
-    /************************/
-    .form-1 {
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-      background-color: #153e52;
-    }
-
-    .form-1 .text-container {
-      margin-bottom: 4rem;
-    }
-
-    .form-1 .section-title {
-      margin-bottom: 0.5rem;
-    }
-
-    .form-1 h2,
-    .form-1 p,
-    .form-1 .list-unstyled,
-    .form-1 .form-check-label,
-    .form-1 .form-check-label a {
-      color: #ffffff;
-    }
-
-    .form-1 h2 {
-      margin-bottom: 1.375rem;
-    }
-
-    .form-1 .list-unstyled .fas {
-      color: #14bf98;
-      font-size: 0.375rem;
-      line-height: 1.625rem;
-    }
-
-    .form-1 .list-unstyled .flex-grow-1 {
-      margin-left: 0.625rem;
-    }
-
-    .form-1 .form-floating label {
-      color: #ffffff;
-    }
-
-    .form-1 .form-control,
-    .form-1 .form-select {
-      border: 1px solid #39728f;
-      border-radius: 2px;
-      background-color: #2a5d77;
-      color: #ffffff;
-    }
-
-    .form-1 .form-floating .form-control:hover,
-    .form-1 .form-select:hover {
-      border: 1px solid #62a3c1;
-    }
-
-    .form-1 .form-select {
-      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
     }
 
 
@@ -1094,8 +974,8 @@ Colors:
     /*     Projects     */
     /********************/
     .filter {
-      padding-top: 8.5rem;
-      padding-bottom: 9rem;
+      padding-top: 4rem;
+      padding-bottom: 7rem;
       text-align: center;
     }
 
@@ -1209,16 +1089,18 @@ Colors:
     /*     Projects Modals     */
     /***************************/
     .projects-modals .modal-dialog {
-      max-width: 1150px;
+      max-width: 1024px;
       margin-top: 120px;
     }
 
     .projects-modals .modal-content {
+      display: flex;
+      align-items: center;
       padding: 2.75rem 1.25rem;
     }
 
     .projects-modals .modal-content .image-container {
-      margin-bottom: 3rem;
+      /* margin-bottom: 3rem; */
     }
 
     .projects-modals .modal-content img {
@@ -1271,8 +1153,8 @@ Colors:
     /*     Team     */
     /****************/
     .card-2 {
-      padding-top: 7.75rem;
-      padding-bottom: 4.25rem;
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
       text-align: center;
     }
 
@@ -1358,8 +1240,8 @@ Colors:
     /*     About     */
     /*****************/
     .counter {
-      padding-top: 8.25rem;
-      padding-bottom: 5.75rem;
+      padding-top: 3.75rem;
+      padding-bottom: 3.75rem;
     }
 
     /* Hover Animation */
@@ -1441,8 +1323,8 @@ Colors:
     /*     Contact     */
     /*******************/
     .form-2 {
-      padding-top: 8rem;
-      padding-bottom: 7rem;
+      padding-top: 3.75rem;
+      padding-bottom: 5rem;
     }
 
     .form-2 .text-container {
@@ -1511,13 +1393,13 @@ Colors:
       height: 3.25rem;
       margin-bottom: 1.25rem;
       margin-right: 0.375rem;
-      background: url('../images/hexagon-green.svg') center center no-repeat;
+      /* background: url('../images/hexagon-green.svg') center center no-repeat; */
       background-size: 52px 52px;
       transition: all 0.2s ease;
     }
 
     .footer .footer-col.third .fa-stack:hover {
-      background: url('../images/hexagon-white.svg') center center no-repeat;
+      /* background: url('../images/hexagon-white.svg') center center no-repeat; */
       background-size: 3.25rem 3.25rem;
     }
 
@@ -2329,12 +2211,9 @@ Colors:
     <div class="container">
 
       <!-- Image Logo -->
-      <a class="navbar-brand logo-image" href="index.html"><img
+      <a class="navbar-brand logo-image" href="#"><img
           src="https://res.cloudinary.com/api-post-img/image/upload/v1676722351/DRM/logo_vkqq3h.svg"
-          alt="alternative"></a>
-
-      <!-- Text Logo - Use this if you don't have a graphic logo -->
-      <!-- <a class="navbar-brand logo-text" href="index.html">DRM</a> -->
+          alt="logo-image"></a>
 
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -2357,25 +2236,25 @@ Colors:
           <li class="nav-item">
             <a class="nav-link" href="#contact">Contacto</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Acerca de</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#team">Equipo</a>
-          </li>
-          <!-- <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
               aria-expanded="false">Otros</a>
             <ul class="dropdown-menu" aria-labelledby="dropdown01">
-
-
-              <li><a class="dropdown-item" href="terms.html">Términos y condiciones</a></li>
               <li>
                 <div class="dropdown-divider"></div>
               </li>
-              <li><a class="dropdown-item" href="privacy.html">Politica de privacidad</a></li>
+              <li>
+                <a class="dropdown-item" href="#team">Equipo</a>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li><a class="dropdown-item" href="#about">Acerca de </a></li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
             </ul>
-          </li> -->
+          </li>
         </ul>
         <span class="nav-item social-icons">
           <span class="fa-stack">
@@ -2435,7 +2314,9 @@ Colors:
         </div> <!-- end of col -->
         <div class="col-lg-7">
           <div class="image-container">
-            <img class="img-fluid" src="images/intro-office.jpg" alt="alternative">
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/api-post-img/image/upload/v1676722351/DRM/intro-office_zuvlqv.jpg"
+              alt="alternative">
           </div> <!-- end of image-container -->
         </div> <!-- end of col -->
       </div> <!-- end of row -->
@@ -2458,7 +2339,9 @@ Colors:
           <!-- Card -->
           <div class="card">
             <div class="card-image">
-              <img class="img-fluid" src="images/service-1.jpg" alt="alternative">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676928740/DRM/service-1_iv0jiv.png"
+                alt="service1">
             </div>
             <div class="card-body">
               <h4 class="card-title">Servicios de Ingeniería Civil</h4>
@@ -2486,7 +2369,9 @@ Colors:
           <!-- Card -->
           <div class="card">
             <div class="card-image">
-              <img class="img-fluid" src="images/service-2.jpg" alt="alternative">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676928741/DRM/service-2_mknrqx.jpg"
+                alt="service2">
             </div>
             <div class="card-body">
               <h4 class="card-title">Servicios de Obra pesada</h4>
@@ -2514,11 +2399,14 @@ Colors:
           <!-- Card -->
           <div class="card">
             <div class="card-image">
-              <img class="img-fluid" src="images/service-3.jpg" alt="alternative">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676928741/DRM/service-3_luflgg.png"
+                alt="service3">
             </div>
             <div class="card-body">
-              <h4 class="card-title">Servicios de Instalaciones</h4>
-              <p>Ofrecemos servicios de instalaciones, como eléctricas, pintura, colocación de pisos, hidrosanitarias y
+              <h4 class="card-title">Servicios de Remodelación</h4>
+              <p>Ofrecemos servicios de remodelaciones, como eléctricas, pintura, tablaroca, colocación de pisos,
+                hidrosanitarias y
                 de gas, realizados por profesionales altamente calificados y con experiencia en la industria,
                 garantizando alta calidad y cumplimiento con estándares de seguridad.
               </p>
@@ -2527,7 +2415,7 @@ Colors:
                 <li class="d-flex">
                   <i class="fas fa-square"></i>
                   <div class="flex-grow-1">Ofrecemos servicios de mantenimiento para las instalaciones eléctricas,
-                    hidrosanitarias y de gas.
+                    plomería.
                   </div>
                 </li>
               </ul>
@@ -2542,80 +2430,6 @@ Colors:
     </div> <!-- end of container -->
   </div> <!-- end of cards-2 -->
   <!-- end of services -->
-
-
-  <!-- Details 1 -->
-  <div class="accordion-1 d-flex">
-    <div class="area-1">
-    </div><!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
-    <div class="area-2">
-
-      <!-- Accordion -->
-      <div class="accordion" id="accordionExample">
-        <h2>Metas y Valores</h2>
-
-        <!-- Accordion Item -->
-        <div class="accordion-item">
-          <div class="accordion-icon">1</div>
-          <div class="accordion-header" id="headingOne">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
-              Visión y Plan de Expansión
-            </button>
-          </div> <!-- end of accordion-header -->
-          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">Nuestro objetivo a largo plazo es seguir creciendo y ampliando nuestra presencia
-              en la Riviera Maya, entrando en más cadenas hoteleras y trabajando con más hoteles. Además,
-              seguiremos mejorando y actualizando nuestros servicios y procesos para ofrecer siempre el mejor servicio
-              a nuestros clientes.
-            </div>
-          </div> <!-- end of accordion-collapse -->
-        </div> <!-- end of accordion-item -->
-        <!-- end of accordion-item -->
-
-        <!-- Accordion Item -->
-        <div class="accordion-item">
-          <div class="accordion-icon blue">2</div>
-          <div class="accordion-header" id="headingTwo">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-              aria-expanded="false" aria-controls="collapseTwo">
-              Valores y Políticas
-            </button>
-          </div> <!-- end of accordion-header -->
-          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">En Desarrolladora Riviera Maya DRM valoramos el trabajo en equipo y la
-              colaboración cercana con nuestros clientes para obtener beneficios mutuos. Además, fomentamos un ambiente
-              de trabajo seguro y profesional, para garantizar la satisfacción de nuestros clientes y el bienestar de
-              nuestros empleados.</div>
-          </div> <!-- end of accordion-collapse -->
-        </div> <!-- end of accordion-item -->
-        <!-- end of accordion-item -->
-
-        <!-- Accordion Item -->
-        <div class="accordion-item">
-          <div class="accordion-icon purple">3</div>
-          <div class="accordion-header" id="headingThree">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
-              aria-expanded="false" aria-controls="collapseThree">
-              Logros y premios
-            </button>
-          </div> <!-- end of accordion-header -->
-          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-            data-bs-parent="#accordionExample">
-            <div class="accordion-body">Nuestros principales logros incluyen trabajar con reconocidas cadenas hoteleras
-              como Karisma y también con hoteles de renombre como Bahia Principe, Azul Beach y Dorados.</div>
-          </div> <!-- end of accordion-collapse -->
-        </div> <!-- end of accordion-item -->
-        <!-- end of accordion-item -->
-
-      </div> <!-- end of accordion -->
-      <!-- end of accordion -->
-
-    </div> <!-- end of area-2 -->
-  </div> <!-- end of accordion-1 -->
-  <!-- end of details 1 -->
 
   <!-- Projects -->
   <div id="projects" class="filter">
@@ -2636,63 +2450,12 @@ Colors:
           <!-- Filter -->
           <div class="button-group filters-button-group">
             <button class="button is-checked" data-filter="*">Todos</button>
-            <button class="button" data-filter=".design">Diseño</button>
-            <button class="button" data-filter=".development">Remodelación</button>
-
+            <button class="button" id="obra" data-filter=".obra">Obra civil</button>
+            <button class="button" data-filter=".carpinteria">Carpintería</button>
+            <button class="button" data-filter=".acabado">Acabados</button>
           </div> <!-- end of button group -->
-          <div class="grid">
-            <div class="element-item development">
-              <a data-bs-toggle="modal" data-bs-target="#modal1">
-                <div class="element-item-overlay"><span>Construcción de hotel</span>
-                </div>
-                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item development">
-              <a data-bs-toggle="modal" data-bs-target="#modal2">
-                <div class="element-item-overlay"><span>Ampliación de restaurante</span></div>
-                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design development ">
-              <a data-bs-toggle="modal" data-bs-target="#modal3">
-                <div class="element-item-overlay"><span>Renovación de spa</span></div>
-                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design development ">
-              <a data-bs-toggle="modal" data-bs-target="#modal4">
-                <div class="element-item-overlay"><span>Remodelación de áreas</span>
-                </div>
-                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design development ">
-              <a data-bs-toggle="modal" data-bs-target="#modal5">
-                <div class="element-item-overlay"><span>Construcción de villas privadas</span>
-                </div>
-                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design ">
-              <a data-bs-toggle="modal" data-bs-target="#modal6">
-                <div class="element-item-overlay"><span>Mejoras en sistemas eléctricos</span>
-                </div>
-                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design ">
-              <a data-bs-toggle="modal" data-bs-target="#modal7">
-                <div class="element-item-overlay"><span>Renovación de spa</span></div>
-                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
-              </a>
-            </div>
-            <div class="element-item design ">
-              <a data-bs-toggle="modal" data-bs-target="#modal8">
-                <div class="element-item-overlay"><span>Ampliación de restaurante</span></div>
-                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
-              </a>
-            </div>
+
+          <div class="grid" id="proyect-container">
           </div> <!-- end of grid -->
           <!-- end of filter -->
 
@@ -2703,427 +2466,125 @@ Colors:
   <!-- end of projects -->
 
   <!-- Projects Modals -->
-  <div class="projects-modals">
-
-    <!-- Modal -->
-    <div id="modal1" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal2" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal3" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal4" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-4.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal5" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-5.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal6" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-6.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal7" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-7.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-    <!-- Modal -->
-    <div id="modal8" class="modal fade" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="row">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <div class="col-lg-8">
-              <div class="image-container">
-                <img class="img-fluid" src="images/project-8.jpg" alt="alternative">
-              </div> <!-- end of image-container -->
-            </div> <!-- end of col -->
-            <div class="col-lg-4">
-              <h3>Logro</h3>
-              <hr>
-              <p>Se completó la construcción del hotel en el plazo establecido y cumplió con los estándares de calidad y
-                seguridad requeridos.</p>
-              <h4>Comentarios de los usuarios</h4>
-              <p>Los clientes y el propietario del hotel están muy satisfechos con el resultado final y han recomendado
-                nuestros servicios a otros hoteles en la zona.</p>
-              <ul class="list-unstyled li-space-lg">
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">Los clientes han expresado su satisfacción con el resultado final de la
-                    construcción del hotel y han dado comentarios positivos sobre la calidad del servicio que
-                    recibieron.</div>
-                </li>
-                <li class="d-flex">
-                  <i class="fas fa-chevron-right"></i>
-                  <div class="flex-grow-1">El propietario del hotel ha recomendado nuestros servicios a otros hoteles en
-                    la zona debido a la satisfacción con el resultado final y la calidad del servicio brindado.</div>
-                </li>
-              </ul>
-              <button type="button" class="btn-outline-reg" data-bs-dismiss="modal">Close</button>
-            </div> <!-- end of col -->
-          </div> <!-- end of row -->
-        </div> <!-- end of modal-content -->
-      </div> <!-- end of modal-dialog -->
-    </div> <!-- end of modal -->
-    <!-- end of modal -->
-
-  </div> <!-- end of projects-modals -->
+  <div class=" projects-modals" id="modal-proyect-container">
+  </div>
   <!-- end of projects modals -->
 
+  <!-- Details 1 -->
+  <div id="about" class="accordion-1 d-flex">
+    <div class="area-1">
+    </div>
+    <!-- end of area-1 on same line and no space between comments to eliminate margin white space -->
+    <div class="area-2">
 
-  <!-- Team -->
-  <div id="team" class="card-2 bg-gray">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2 class="h2-heading">Conoce a nuestro equipo</h2>
-          <p class="p-heading">Presentamos a nuestro equipo altamente calificado y dedicado, responsable de llevar a
-            cabo nuestros proyectos de construcción y mantenimiento de maquinaria pesada.</p>
-        </div> <!-- end of col -->
-      </div> <!-- end of row -->
-      <div class="row">
-        <div class="col-lg-12">
+      <!-- Accordion -->
+      <div class="accordion" id="accordionExample">
+        <h2>Metas y Valores</h2>
 
-          <!-- Card -->
-          <div class="card">
-            <div class="card-image">
-              <img class="img-fluid" src="images/team-member-1.jpg" alt="alternative">
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-icon">1</div>
+          <div class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              Visión y Plan de Expansión
+            </button>
+          </div> <!-- end of accordion-header -->
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Nuestro objetivo a largo plazo es seguir creciendo y
+              ampliando nuestra presencia
+              en la Riviera Maya, entrando en más cadenas hoteleras y trabajando con más hoteles.
+              Además,
+              seguiremos mejorando y actualizando nuestros servicios y procesos para ofrecer siempre
+              el mejor servicio
+              a nuestros clientes.
             </div>
-            <div class="card-body">
-              <h6 class="card-title">Juan Pérez</h6>
-              <p>Gerente de Construcción</p>
-            </div>
-          </div>
-          <!-- end of card -->
+          </div> <!-- end of accordion-collapse -->
+        </div> <!-- end of accordion-item -->
+        <!-- end of accordion-item -->
 
-          <!-- Card -->
-          <div class="card">
-            <div class="card-image">
-              <img class="img-fluid" src="images/team-member-2.jpg" alt="alternative">
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">María Martínez</h6>
-              <p>Gerente de Renta de Maquinaria Pesada</p>
-            </div>
-          </div>
-          <!-- end of card -->
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-icon blue">2</div>
+          <div class="accordion-header" id="headingTwo">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+              aria-expanded="false" aria-controls="collapseTwo">
+              Valores y Políticas
+            </button>
+          </div> <!-- end of accordion-header -->
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">En Desarrolladora Riviera Maya DRM valoramos el trabajo en
+              equipo y la
+              colaboración cercana con nuestros clientes para obtener beneficios mutuos. Además,
+              fomentamos un ambiente
+              de trabajo seguro y profesional, para garantizar la satisfacción de nuestros clientes
+              y el bienestar de
+              nuestros empleados.</div>
+          </div> <!-- end of accordion-collapse -->
+        </div> <!-- end of accordion-item -->
+        <!-- end of accordion-item -->
 
-          <!-- Card -->
-          <div class="card">
-            <div class="card-image">
-              <img class="img-fluid" src="images/team-member-3.jpg" alt="alternative">
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">Carlos García</h6>
-              <p>Gerente de Mantenimiento y Reparación de Maquinaria Pesada</p>
+        <!-- Accordion Item -->
+        <div class="accordion-item">
+          <div class="accordion-icon purple">3</div>
+          <div class="accordion-header" id="headingThree">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+              aria-expanded="false" aria-controls="collapseThree">
+              Logros y premios
+            </button>
+          </div> <!-- end of accordion-header -->
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">Nuestros principales logros incluyen trabajar con
+              reconocidas cadenas hoteleras
+              como
+              Karisma y también con hoteles de renombre como Dorado Royale, Dorado Seaside,
+              Generations, Azul Beach, Margaritaville, H10 Playa del Carmen, Viva Wyndham Azteca,
+              Viva Wyndham Maya, Bahía príncipe</div>
+          </div> <!-- end of accordion-collapse -->
+        </div> <!-- end of accordion-item -->
+        <!-- end of accordion-item -->
 
-            </div>
-          </div>
-          <!-- end of card -->
+      </div> <!-- end of accordion -->
+      <!-- end of accordion -->
 
-          <!-- Card -->
-          <div class="card">
-            <div class="card-image">
-              <img class="img-fluid" src="images/team-member-4.jpg" alt="alternative">
-            </div>
-            <div class="card-body">
-              <h6 class="card-title">Ana Rodríguez</h6>
-              <p>Directora de Recursos Humanos</p>
-            </div>
-          </div>
-          <!-- end of card -->
-
-        </div> <!-- end of col -->
-      </div> <!-- end of row -->
-    </div> <!-- end of container -->
-  </div> <!-- end of card-2 -->
-  <!-- end of team -->
-
+    </div> <!-- end of area-2 -->
+  </div> <!-- end of accordion-1 -->
+  <!-- end of details 1 -->
 
   <!-- About -->
-  <div id="about" class="counter">
+  <div class="counter">
     <div class="container">
       <div class="row">
         <div class="col-lg-5 col-xl-6">
           <div class="image-container">
-            <img class="img-fluid" src="images/about.jpg" alt="alternative">
+            <img class="img-fluid"
+              src="https://res.cloudinary.com/api-post-img/image/upload/v1676722353/DRM/about_re6eei.jpg"
+              alt="alternative">
           </div> <!-- end of image-container -->
         </div> <!-- end of col -->
         <div class="col-lg-7 col-xl-6">
           <div class="text-container">
-            <div class="section-title">Acerca de</div>
+            <div class="section-title">ACERCA DE</div>
             <h2>Estructura organizativa</h2>
-            <p>La empresa cuenta con un equipo de supervisores especializados bajo liderazgo del Director General para
-              garantizar un servicio de alta calidad y cumplir las necesidades y requisitos de los clientes.</p>
+            <p>La empresa cuenta con un equipo de supervisores especializados bajo liderazgo del
+              Director General para
+              garantizar un servicio de alta calidad y cumplir las necesidades y requisitos de los
+              clientes.</p>
             <ul class="list-unstyled li-space-lg">
               <li class="d-flex">
                 <i class="fas fa-square"></i>
-                <div class="flex-grow-1">Contamos con un equipo de supervisores altamente capacitados y con experiencia
+                <div class="flex-grow-1">Contamos con un equipo de supervisores altamente
+                  capacitados y con experiencia
                   en la industria para garantizar un servicio de alta calidad a nuestros clientes.
                 </div>
               </li>
               <li class="d-flex">
                 <i class="fas fa-square"></i>
-                <div class="flex-grow-1">Nuestros supervisores trabajan en estrecha colaboración con nuestros clientes
+                <div class="flex-grow-1">Nuestros supervisores trabajan en estrecha colaboración con
+                  nuestros clientes
                   para asegurar que todas sus necesidades y requisitos sean cumplidos.</div>
               </li>
             </ul>
@@ -3135,6 +2596,126 @@ Colors:
   </div> <!-- end of counter -->
   <!-- end of about -->
 
+  <!-- Team -->
+  <div id="team" class="card-2 bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="h2-heading">Conoce a nuestro equipo</h2>
+          <p class="p-heading">Presentamos a nuestro equipo altamente calificado y dedicado,
+            responsable de llevar a
+            cabo nuestros proyectos de construcción y mantenimiento de maquinaria pesada.</p>
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="Photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Marco Antonio Gómez Gútierrez
+              </h6>
+              <p>Asistente</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="Photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Juan Gabriel Escalante Ruiz</h6>
+              <p>Compras</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="Photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Pedro Zacarías Zacarías</h6>
+              <p>Supervisor</p>
+
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Miguel López García</h6>
+              <p>Supervisor</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">José Eduardo Troche</h6>
+              <p>Supervisor</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Miguel Laguna Aguirre</h6>
+              <p>Encargado Maquinaria Pesada</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+          <!-- Card -->
+          <div class="card">
+            <div class="card-image">
+              <img class="img-fluid"
+                src="https://res.cloudinary.com/api-post-img/image/upload/v1676727758/DRM/team-member_m6ltbg.png"
+                alt="photo">
+            </div>
+            <div class="card-body">
+              <h6 class="card-title">Jorge Ramírez Rodríguez</h6>
+              <p>Arquitecto</p>
+            </div>
+          </div>
+          <!-- end of card -->
+
+
+        </div> <!-- end of col -->
+      </div> <!-- end of row -->
+    </div> <!-- end of container -->
+  </div> <!-- end of card-2 -->
+  <!-- end of team -->
 
   <!-- Contact -->
   <div id="contact" class="form-2 bg-gray">
@@ -3142,14 +2723,18 @@ Colors:
       <div class="row">
         <div class="col-lg-6">
           <div class="text-container">
-            <div class="section-title">Contacto</div>
+            <div class="section-title">CONTACTO</div>
             <h2>Manténgase en contacto con nosotros</h2>
-            <p>Nuestra sección de contacto ofrece un formulario fácil de usar para que nuestros clientes puedan
-              enviarnos un mensaje y recibir una respuesta rápida de nuestro equipo. Simplemente ingrese su nombre y
-              correo electrónico y nos pondremos en contacto con usted lo antes posible. ¡Estamos siempre dispuestos a
+            <p>Nuestra sección de contacto ofrece un formulario fácil de usar para que nuestros
+              clientes puedan
+              enviarnos un mensaje y recibir una respuesta rápida de nuestro equipo. Simplemente
+              ingrese su nombre y
+              correo electrónico y nos pondremos en contacto con usted lo antes posible. ¡Estamos
+              siempre dispuestos a
               ayudar!</p>
             <ul class="list-unstyled li-space-lg">
-              <li class="address"><i class="fas fa-map-marker-alt"></i>Calle Palma Paraíso 68, Mz 130 Lt 2,
+              <li class="address"><i class="fas fa-map-marker-alt"></i>Calle Palma Paraíso 68, Mz
+                130 Lt 2,
                 Fraccionamiento Las Palmas, Benito Juárez,
                 Cancún, Quintana Roo, C.P. 77500.
               </li>
@@ -3161,26 +2746,17 @@ Colors:
         <div class="col-lg-6">
 
           <!-- Contact Form -->
-          <form>
+          <form class="pt-5">
             <div class="mb-4 form-floating">
               <input type="text" class="form-control" id="floatingInput4" placeholder="Escribe tu nombre">
               <label for="floatingInput4">Nombre</label>
             </div>
-            <!-- <div class="mb-4 form-floating">
-              <input type="email" class="form-control" id="floatingInput5" placeholder="name@example.com">
-              <label for="floatingInput5">Email</label>
-            </div> -->
             <div class="mb-4 form-floating">
               <textarea class="form-control" id="floatingTextarea1" placeholder="Escribe tu mensaje"
                 rows="4"></textarea>
               <label for="floatingTextarea1">Mensaje</label>
             </div>
-            <div class="mb-4 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck2">
-              <label class="form-check-label" for="exampleCheck2">Estoy de acuerdo con la <a
-                  href="privacy.html">Política
-                  de privacidad</a> y los <a href="terms.html  ">Términos y condiciones</a></label>
-            </div>
+
             <button type="submit" class="form-control-submit-button" id="form">Enviar</button>
           </form>
           <!-- end of contact form -->
@@ -3199,15 +2775,14 @@ Colors:
         <div class="col-lg-12">
           <div class="footer-col first">
             <h6>Acerca de</h6>
-            <p class="p-small">Página web de Desarrolladora Riviera Maya, líder en proyectos de construcción y renta de
+            <p class="p-small">CV empresarial de Desarrolladora Riviera Maya, líder en proyectos de
+              construcción y renta
+              de
               maquinaria pesada en la península de Yucatán.</p>
           </div> <!-- end of footer-col -->
           <div class="footer-col second">
             <h6>Enlaces</h6>
             <ul class="list-unstyled li-space-lg p-small">
-              <li>Importante: <a href="terms.html">Términos y condiciones</a>, <a href="privacy.html">Política de
-                  privacidad</a>
-              </li>
               <li>Menu: <a href="#header">Inicio</a>, <a href="#services">Servicios</a>, <a
                   href="#projects">Proyectos</a>,
                 <a href="#contact">Contacto</a>
@@ -3216,12 +2791,12 @@ Colors:
           </div> <!-- end of footer-col -->
           <div class="footer-col third">
             <span class="fa-stack">
-              <a href="#your-link">
+              <a href="#">
                 <i class="fab fa-facebook-f fa-stack-1x"></i>
               </a>
             </span>
             <span class="fa-stack">
-              <a href="#your-link">
+              <a href="#">
                 <i class="fab fa-twitter fa-stack-1x"></i>
               </a>
             </span>
@@ -3251,18 +2826,307 @@ Colors:
 
   <!-- Back To Top Button -->
   <button onclick="topFunction()" id="myBtn">
-    <img src="images/up-arrow.png" alt="alternative">
+    <img src="https://res.cloudinary.com/api-post-img/image/upload/v1676722353/DRM/up-arrow_xb7btq.png"
+      alt="alternative">
   </button>
   <!-- end of back to top button -->
 
   <!-- Scripts -->
-  <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-  <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-  <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
-  <script src="js/replaceme.min.js"></script> <!-- ReplaceMe for rotating text -->
-  <script src="js/isotope.pkgd.min.js"></script> <!-- Isotope for filter -->
-  <script>
+
+  <!-- Bootstrap framework -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <!-- Swiper for image and text sliders -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <!-- Purecounter counter for statistics numbers -->
+
+  <!-- Isotope for filter -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+
+  <!-- ReplaceMe for rotating text -->
+  <script type="text/javascript" defer>
+    /*!
+     *  replaceme.js - text rotating component in vanilla JavaScript
+     *  @version 1.1.0
+     *  @author Adrian Klimek
+     *  @link https://adrianklimek.github.io/replaceme/
+     *  @copyright Addrian Klimek 2016
+     *  @license MIT
+     */
+    !function (a, b) { "use strict"; function c(a, b) { for (var c in b) b.hasOwnProperty(c) && (a[c] = b[c]); return a } function d() { "function" == typeof b && b.fn.extend({ ReplaceMe: function (a) { return this.each(function () { new e(this, a) }) } }) } function e(a, b) { var d = { animation: "animated fadeIn", speed: 2e3, separator: ",", hoverStop: !1, clickChange: !1, loopCount: "infinite", autoRun: !0, onInit: !1, onChange: !1, onComplete: !1 }; if ("object" == typeof b ? this.options = c(d, b) : this.options = d, "undefined" == typeof a) throw new Error('ReplaceMe [constructor]: "element" parameter is required'); if ("object" == typeof a) this.element = a; else { if ("string" != typeof a) throw new Error('ReplaceMe [constructor]: wrong "element" parameter'); this.element = document.querySelector(a) } this.init() } e.prototype.init = function () { "function" == typeof this.options.onInit && this.options.onInit(), this.words = this.escapeHTML(this.element.innerHTML).split(this.options.separator), this.count = this.words.length, this.position = this.loopCount = 0, this.running = !1, this.bindAll(), this.options.autoRun === !0 && this.start() }, e.prototype.bindAll = function () { this.options.hoverStop === !0 && (this.element.addEventListener("mouseover", this.pause.bind(this)), this.element.addEventListener("mouseout", this.start.bind(this))), this.options.clickChange === !0 && this.element.addEventListener("click", this.change.bind(this)) }, e.prototype.changeAnimation = function () { this.change(), this.loop = setTimeout(this.changeAnimation.bind(this), this.options.speed) }, e.prototype.start = function () { this.running !== !0 && (this.running = !0, this.changeWord(this.words[this.position]), this.position++), this.loop = setTimeout(this.changeAnimation.bind(this), this.options.speed) }, e.prototype.change = function () { return this.position > this.count - 1 && (this.position = 0, this.loopCount++, this.loopCount >= this.options.loopCount) ? void this.stop() : (this.changeWord(this.words[this.position]), this.position++, void ("function" == typeof this.options.onChange && this.options.onChange())) }, e.prototype.stop = function () { this.running = !1, this.position = this.loopCount = 0, this.pause(), "function" == typeof this.options.onComplete && this.options.onComplete() }, e.prototype.pause = function () { clearTimeout(this.loop) }, e.prototype.changeWord = function (a) { this.element.innerHTML = '<span class="' + this.options.animation + '" style="display:inline-block;">' + a + "</span>" }, e.prototype.escapeHTML = function (a) { var b = /<\/?\w+\s*[^>]*>/g; return b.test(a) === !0 ? a.replace(b, "") : a }, a.ReplaceMe = e, d() }(window, window.jQuery);
+  </script>
+
+  <!-- Custom scripts -->
+  <script type="text/javascript" defer>
     /* Description: Custom JS file */
+
+    /* Build proyects */
+    // data
+    let obras = [
+      {
+        id: 1,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676838813/DRM/proyecto1-obra_agv6zq.png'
+      },
+      {
+        id: 2,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676839591/DRM/proyecto2-obra_kjw4yy.png'
+      },
+      {
+        id: 3,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676839919/DRM/proyecto3-obra_npxasv.png'
+      },
+      {
+        id: 4,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676839919/DRM/proyecto4-obra_jyhdoe.png'
+      },
+      {
+        id: 5,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676839919/DRM/proyecto5-obra_mzsczg.png'
+      },
+      {
+        id: 6,
+        name: "Obra Civil",
+        data: "obra",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676839920/DRM/proyecto6-obra_v8i9yf.png'
+      },
+    ]
+
+    let carpinterias = [
+      {
+        id: 7,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763647/DRM/proyecto7-carpinteria_trwfso.png'
+      },
+      {
+        id: 8,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763647/DRM/proyecto8-carpinteria_vsus8t.png'
+      },
+      {
+        id: 9,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763648/DRM/proyecto9-carpinteria_tupr8y.png'
+      },
+      {
+        id: 10,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763648/DRM/proyecto10-carpinteria_mrtnjw.png'
+      },
+      {
+        id: 11,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763649/DRM/proyecto11-carpinteria_ppath9.png'
+      },
+      {
+        id: 12,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763650/DRM/proyecto12-carpinteria_uytxsl.png'
+      },
+      {
+        id: 13,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763650/DRM/proyecto13-carpinteria_zewpvd.png'
+      },
+      {
+        id: 14,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763650/DRM/proyecto14-carpinteria_jaxcqc.png'
+      },
+      {
+        id: 15,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763650/DRM/proyecto15-carpinteria_fashiw.png'
+      },
+      {
+        id: 16,
+        name: "Carpintería",
+        data: "carpinteria",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763653/DRM/proyecto16-carpinteria_s32xjo.png'
+      },
+    ]
+
+    let acabados = [
+      {
+        id: 27,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763657/DRM/proyecto27-villa_kenlfu.png'
+      },
+      {
+        id: 28,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763655/DRM/proyecto28-villa_irmxgh.png'
+      },
+      {
+        id: 29,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763654/DRM/proyecto29-villa_q1e0vq.png'
+      },
+      {
+        id: 30,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763652/DRM/proyecto30-villa_isvttp.png'
+      },
+      {
+        id: 31,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763657/DRM/proyecto31-villa_xwefau.png'
+      },
+      {
+        id: 32,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763655/DRM/proyecto32-villa_jkbyqx.png'
+      },
+      {
+        id: 33,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763656/DRM/proyecto33-villa_vjf9lg.png'
+      },
+      {
+        id: 34,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763652/DRM/proyecto34-villa_il0jjj.png'
+      },
+      {
+        id: 35,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763657/DRM/proyecto35-villa_qshe5z.png'
+      },
+      {
+        id: 36,
+        name: "Acabados",
+        data: "acabado",
+        url: 'https://res.cloudinary.com/api-post-img/image/upload/v1676763657/DRM/proyecto36-villa_gcf632.png'
+      },
+    ]
+
+    // Mezclar uniformemente los tres arreglos
+    let mixProyects = carpinterias.concat(obras, acabados);
+
+    mixProyects.sort(function () {
+      return Math.random() - 0.5;
+    })
+
+    function generateProyect(item) {
+      return `
+  <div class="element-item ${item.data}">
+              <a data-bs-toggle="modal" data-bs-target="#modal${item.id}">
+                <div class="element-item-overlay"><span>${item.name}</span>
+                </div>
+                <img class="img-fluid"
+                  src=${item.url}
+                  alt="${item.data}">
+              </a>
+            </div>
+  `
+    }
+
+    function generateModalProyect(item) {
+      return `
+       <div id="modal${item.id}" class="modal fade" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="col-lg-8 mx-auto">
+              <div class="image-container">
+                <img class="img-fluid"
+                  src=${item.url}
+                  alt=${item.data}>
+              </div> <!-- end of image-container -->
+            </div> <!-- end of col -->
+          </div> <!-- end of row -->
+        </div> <!-- end of modal-content -->
+      </div> <!-- end of modal-dialog -->
+    </div> <!-- end of modal -->
+      `
+    }
+
+    let proyectsContainer = document.getElementById("proyect-container");
+    let modalsProyectsContainer = document.getElementById("modal-proyect-container");
+
+    window.addEventListener('load', () => {
+      mixProyects.forEach((proyect) => {
+        let htmlProyect = generateProyect(proyect);
+        let htmlModalProyect = generateModalProyect(proyect);
+
+        proyectsContainer.innerHTML += htmlProyect;
+        modalsProyectsContainer.innerHTML += htmlModalProyect;
+      });
+    })
+
+    /* Filter - Isotope */
+    const chargedFilter = () => {
+      const gridCheck = document.querySelector('.grid');
+      if (gridCheck !== null) {
+        // init Isotope
+        var iso = new Isotope('.grid', {
+          itemSelector: '.element-item',
+          layoutMode: 'fitRows'
+        });
+
+        // bind filter button click
+        var filtersElem = document.querySelector('.filters-button-group');
+        filtersElem.addEventListener('click', function (event) {
+          // only work with buttons
+          if (!matchesSelector(event.target, 'button')) {
+            return;
+          }
+          var filterValue = event.target.getAttribute('data-filter');
+          // use matching filter function
+          iso.arrange({ filter: filterValue });
+        });
+
+        // change is-checked class on buttons
+        var buttonGroups = document.querySelectorAll('.button-group');
+        for (var i = 0, len = buttonGroups.length; i < len; i++) {
+          var buttonGroup = buttonGroups[i];
+          radioButtonGroup(buttonGroup);
+        }
+
+        function radioButtonGroup(buttonGroup) {
+          buttonGroup.addEventListener('click', function (event) {
+            // only work with buttons
+            if (!matchesSelector(event.target, 'button')) {
+              return;
+            }
+            buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+            event.target.classList.add('is-checked');
+          });
+        }
+      }
+    }
+
+    setInterval(chargedFilter, 1000)
 
     /* Navigation */
     // Collapse the navbar by adding the top-nav-collapse class
@@ -3352,76 +3216,6 @@ Colors:
       });
     }
 
-
-    /* Card Slider - Swiper */
-    var cardSlider = new Swiper('.card-slider', {
-      autoplay: {
-        delay: 4000,
-        disableOnInteraction: false
-      },
-      loop: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      },
-      slidesPerView: 3,
-      spaceBetween: 70,
-      breakpoints: {
-        // when window is <= 767px
-        767: {
-          slidesPerView: 1
-        },
-        // when window is <= 991px
-        991: {
-          slidesPerView: 2,
-          spaceBetween: 40
-        }
-      }
-    });
-
-
-    /* Filter - Isotope */
-    const gridCheck = document.querySelector('.grid');
-
-    if (gridCheck !== null) {
-      // init Isotope
-      var iso = new Isotope('.grid', {
-        itemSelector: '.element-item',
-        layoutMode: 'fitRows'
-      });
-
-      // bind filter button click
-      var filtersElem = document.querySelector('.filters-button-group');
-      filtersElem.addEventListener('click', function (event) {
-        // only work with buttons
-        if (!matchesSelector(event.target, 'button')) {
-          return;
-        }
-        var filterValue = event.target.getAttribute('data-filter');
-        // use matching filter function
-        iso.arrange({ filter: filterValue });
-      });
-
-      // change is-checked class on buttons
-      var buttonGroups = document.querySelectorAll('.button-group');
-      for (var i = 0, len = buttonGroups.length; i < len; i++) {
-        var buttonGroup = buttonGroups[i];
-        radioButtonGroup(buttonGroup);
-      }
-
-      function radioButtonGroup(buttonGroup) {
-        buttonGroup.addEventListener('click', function (event) {
-          // only work with buttons
-          if (!matchesSelector(event.target, 'button')) {
-            return;
-          }
-          buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
-          event.target.classList.add('is-checked');
-        });
-      }
-    }
-
-
     /* Back To Top Button */
     // Get the button
     myButton = document.getElementById("myBtn");
@@ -3455,7 +3249,6 @@ Colors:
       var name = document.getElementById("floatingInput4").value;
       // var email = document.getElementById("floatingInput5").value;
       var menssage = document.getElementById("floatingTextarea1").value;
-      var check = document.getElementById("exampleCheck2").checked;
 
       // Valida que los campos no estén vacíos
       if (!name || !menssage) {
@@ -3463,15 +3256,12 @@ Colors:
         return;
       }
 
-      if (!check) {
-        alert("Por favor, acepta los terminos y condiciones.");
-        return;
-      }
-
       // Abre el cliente de correo electrónico con los campos rellenos
-      window.location.href = "mailto:example@hotmail.com?subject=Mensaje de " + name + "&body=" + menssage;
+      window.location.href = "mailto:admtdrm@gmail.com?subject=Mensaje de " + name + "&body=" + menssage;
     }
-  </script> <!-- Custom scripts -->
+
+  </script>
+
 </body>
 
 </html>
